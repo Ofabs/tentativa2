@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        
+
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            background-color: rgba(128, 128, 128, 0.594);
+            font-size: 20px;
+            font-weight: bolder;
+            color: white;
+            padding: 8px;
+        }
+
+        thead, tfoot {
+            background-color: rgb(76, 76, 76);
+            color: white;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        td.num {
+            text-align: right;
+            width: 50px;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <h1>Uso de grandes tabelas</h1>
+    <!--
+        anatomia para tabela grande
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+    
+    <table>
+        <caption>Países vencedores da copa</caption>
+        <thead>
+            <tr>
+                <th scope="col">País</th>
+                <th scope="col">Taças</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Brasil</tb>
+                <td class="num">5</tb>
+            </tr>
+           <tr>
+                    <td>Itália</tb>
+                    <td class="num">4</tb>
+           </tr>
+                <tr>
+                    <td>Alemanha</tb>
+                    <td class="num">4</tb>
+                </tr>
+                <tr>
+                    <td>Uruguai</tb>
+                    <td class="num">2</tb>
+                </tr>
+                <tr>
+                    <td>Argentina</tb>
+                    <td class="num">2</tb>
+                </tr>
+                <tr>
+                    <td>França</tb>
+                    <td class="num">2</tb>
+                </tr>
+                <tr>
+                    <td>Inglaterra</tb>
+                    <td class="num">1</tb>
+                </tr>
+                <tr>
+                    <td>Espanha</tb>
+                    <td class="num">1</tb>
+                </tr>
+            
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de taças distribuídas</td>
+                <td class="num"><strong>21</strong></td>
+
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
