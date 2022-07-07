@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 06</title>
+    <style>
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 25px;
+        }
+        th, td {
+            border: 1px solid black;
+        }
+        .cprof {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>exercicio de tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo"> <!-- Para expandir para mais de uma coluna é necessário usar somente (span="") -->
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>
+            Cadastro
+        </caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Fernando</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Médico</td>     
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Professora</td>     
+        </tr>
+        <tr>
+            <td>Thiago</td>
+            <td>M</td>
+            <td>50</td>
+            <td>Policial</td>     
+        </tr>
+        <tr>
+            <td>Carla</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Pintora</td>     
+        </tr>
+        <tr>
+            <td>Eduardo</td>
+            <td>M</td>
+            <td>31</td>
+            <td>Engenheiro</td>     
+        </tr>
+        <tr>
+            <td>Beatriz</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Advogada</td>     
+        </tr>
+    </table>
+    
+</body>
+</html>
